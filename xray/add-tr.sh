@@ -34,6 +34,8 @@ clear
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
+read -p " Silakan atur kata sandi (dibuat secara acak jika Anda tidak Mengisi Pasword) :" uuid
+    [[ -z "$uuid" ]] && uuid=`cat /proc/sys/kernel/random/uuid`
 read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#trojanws$/a\#! '"$user $exp"'\
