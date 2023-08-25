@@ -235,10 +235,10 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "                         ${BIWhite}${UWhite}About${NC}"
-echo -e "                 ${BICyan}Base Script : ${BIPurple}Horassss${NC}"
-echo -e "                 ${BICyan}Bot Dev     : ${BIPurple}@xolvadev${NC}"
-echo -e "                 ${BICyan}Decodec     :${BIPurple} @boootzzzz${NC}"
-echo -e "               ${BICyan}${On_IPurple} SCRIPT MULTI VER.3 STABILE ${UWhite}${NC}"
+echo -e "                 ${BICyan}Base Script : ${BIPurple}AutoVps${NC}"
+echo -e "                 ${BICyan}Bot Dev     : ${BIPurple}@MAZHAB${NC}"
+echo -e "                 ${BICyan}Decodec     :${BIPurple} @MASNA${NC}"
+echo -e "               ${BICyan}${On_IPurple} SCRIPT MULTI VER.5.0 STABILE ${GREEN}${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │                  ${BIWhite}${UWhite}Server Informations${NC}"
 echo -e "${BICyan} │"
