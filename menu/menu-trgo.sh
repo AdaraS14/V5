@@ -51,7 +51,7 @@ fi
 export IP=$( curl -s https://ipinfo.io/ip/ )
 
 # // Exporting Network Interface
-export NETWORK_IFACE="$(ip route show to default | awk '{print $10}')"
+export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
 
 # // Validate Result ( 1 )
 touch /etc/${Auther}/license.key
