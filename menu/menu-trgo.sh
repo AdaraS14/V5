@@ -51,11 +51,11 @@ fi
 export IP=$( curl -s https://ipinfo.io/ip/ )
 
 # // Exporting Network Interface
-export NETWORK_IFACE="$(ip route show to default | awk '{print $20}')"
+export NETWORK_IFACE="$(ip route show to default | awk '{print $10}')"
 
 # // Validate Result ( 1 )
 touch /etc/${Auther}/license.key
-export Your_License_Key="$( cat /etc/${Auther}/license.key | awk '{print $5}' )"
+export Your_License_Key="$( cat /etc/${Auther}/license.key | awk '{print $1}' )"
 export Validated_Your_License_Key_With_Server="$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $Your_License_Key | head -n1 | cut -d ' ' -f 1 )"
 if [[ "$Validated_Your_License_Key_With_Server" == "$Your_License_Key" ]]; then
     validated='true'
